@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(78, 77, 77);
     font-family: Arial, Helvetica, sans-serif;
     
     
@@ -41,7 +41,7 @@ img{
 table{
     border-collapse: collapse;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(211, 211, 211);
     margin-left: 150px;
     
     margin-top: 100px;
@@ -53,7 +53,7 @@ td,th{
 }
 
 thead{
-    background-color: cornflowerblue;
+    background-color: rgb(93, 145, 242);
 }
 
 tr:nth-child(even){
