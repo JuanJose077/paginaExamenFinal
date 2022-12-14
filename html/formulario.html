@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/estiloIndex.css">
+    <title>Formulario</title>
+</head>
+
+<body class="agendarsee" onload="cargarPagina()">
+    <script src="../js/funciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+
+    <div class="contenedorTodo">
+
+
+        <form id="formulario">
+            <h1>Agendarse</h1>
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" placeholder="Digite su nombre" id="nombre" name="nombre">
+            <label for="nombre" id="formularioLabelError1" class="error">El nombre tiene que tener minimo 3
+                caracteres</label>
+
+            <br>
+            <br>
+
+            <label for="correo">Correo</label>
+            <input type="email" placeholder="Digite su correo" id="email" name="email" required>
+
+            <br>
+            <br>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" placeholder="Digite su telefono" id="telefono" name="telefono">
+            <label for="telefono" id="formularioLabelError2" class="error">tiene que tener 10 numeros y no puede
+                contener letras </label>
+
+            <br>
+            <br>
+
+            <label for="moto">Moto a cotizar</label>
+            <br>
+            <input type="radio" name="radio1" required> <label>Mt-09</label>
+            <br>
+            <input type="radio" name="radio1" required> <label>Mt-07</label>
+            <br>
+            <input type="radio" name="radio1" required> <label>Mt-03</label>
+
+            <br>
+            <br>
+
+            <label for="color">Color de la moto</label>
+            <select name="color">
+                <option value="Negro">Negro</option>
+                <option value="Azul">Azul</option>
+                <option value="Naranja">Naranja</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="">Digite la fecha de preferencia</label>
+            <input type="date" name="date" required>
+
+
+
+            <br>
+            <br>
+
+
+            <button id="btn" type="submit" onclick="verificar()">Enviar</button>
+            <div id="logoYamaha">
+                <img  src="../imagenes/logo.img" >
+            </div>
+            <a href="inicio.html">Volver al inicio</a>
+        </form>
+
+        
+    </div>
+
+
+</body>
+
+</html>
